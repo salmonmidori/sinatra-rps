@@ -1,0 +1,12 @@
+<h2>We played scissors!</h2>
+<h2>They played <%=@comp_choice%>!</h2>
+
+<%if @comp_choice == "scissors"%>
+  <h2>We tied!</h2>
+<%elsif @comp_choice == "rock"%>
+  <h2>We lost!</h2>
+<%else%>
+  <h2>We won!</h2>
+<%end%>
+
+<a href="/">Rules</a>
